@@ -6,7 +6,7 @@ body {
     font: 14px/25px Arial, Helvetica, sans-serif;
     background: url(../images/main.jpg) center 0 repeat;
     color: #000000;
-    min-width: 960px;
+
 }
 .main {
     width: 960px;
@@ -258,8 +258,6 @@ h2 {
 }
 #main_text {
     background: url(../images/border-1.gif) 0 bottom repeat-x;
-}
-#main_text {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -322,15 +320,28 @@ footer p {
 
 @media screen and (max-width : 500px){
    
+    .slide-shadow{
+        display: none;
+    }
+    
    .articles_with_images{
        display: block;
    }
-   
+    .articles_with_images article {
+       width: 100%;
+        margin-bottom: 25px;
+    }
+    .articles_without_images article{
+        margin-bottom: 25px;
+    }
    .articles_without_images{
        display: block;
    }
-   
-   #main {
+    #main_text{
+        width: auto;
+        display: block;
+    }
+   .main {
        width : auto;
        margin-left: 10px;
        margin-right: 10px;
@@ -350,7 +361,7 @@ footer p {
    }
    img{
        align-content: center;
-       width: 200px;
+       width: 100%;
    }
 
 }
