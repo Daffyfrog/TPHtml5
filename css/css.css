@@ -1,33 +1,63 @@
 body{
-    background-color: whitesmoke;
-    margin: 50px;
+    margin: auto;
+    width : 960px;
+    background: url(../images/main.jpg) center 0 repeat;
 }
 
-#article_without_image{
-    margin: 40px;
+#main {
+    margin: 60px;
+}
+
+
+/************ COMMUN POUR TOUS ************/
+
+h1{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: auto;
+}
+
+#main_text{
+    background: url(../images/border-1.gif) 0 bottom repeat-x;
+}
+
+
+#main_text{
+
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 13px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    font-weight: normal;
+    font-family: 'Oxygen', sans-serif;   
+}
+
+.link{
+    text-decoration: none;
+    color: #55b7c8;
+}
+
+.articles_pattern{
+
+    margin-top: auto;
     display: flex;
     justify-content: space-between;
 }
 
-#article_without_image article {
-    margin-right: 20px;
-    margin-left: 20px;
+.articles_pattern article {
+    margin-top: 25px;
+    margin-right: 10px;
 }
 
 article h3 {
     font-size: 20px;
-    color: #000;
     font-weight: lighter;
     font-family: 'Oxygen', sans-serif;
-}
-
-article p {
-    
-    font-size: 14px;
-    line-height: 1.5;
-    padding-bottom: 10px;
-    font-weight: normal;
-    font-family: 'Oxygen', sans-serif;    
 }
 
 .button_more{
@@ -39,10 +69,14 @@ article p {
     border: none;
 }
 
+
+/************ FOOTER ************/
+
 footer{
     background-color: #131313;
     text-align: center;
     padding: 20px 0 35px 0;
+    width: 100%;
 }
 
 footer p {
