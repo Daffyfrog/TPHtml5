@@ -295,9 +295,14 @@ article h3 {
     background-color: #55b7c8;
     font-size: 1em;
     color: white;
-    padding: 7px 20px 7px 20px;
+    padding: 10px 20px 10px 20px;
     border-radius: 8px;
     border: none;
+    transition: background-color 0.4s ease-in-out;
+}
+.button_more:hover {
+    background-color: #3395A6;
+        
 }
 /************ FOOTER ************/
 
@@ -317,31 +322,12 @@ footer p {
 
 }
 /* ============ RESPONSIVE ============= */
-
-@media screen and (max-width : 500px){
-   
-    .slide-shadow{
-        display: none;
+@media screen and (max-width : 960px){
+    /* GENERIC */
+    header{
+        width:100%;
     }
-    
-   .articles_with_images{
-       display: block;
-   }
-    .articles_with_images article {
-       width: 100%;
-        margin-bottom: 25px;
-    }
-    .articles_without_images article{
-        margin-bottom: 25px;
-    }
-   .articles_without_images{
-       display: block;
-   }
-    #main_text{
-        width: auto;
-        display: block;
-    }
-   .main {
+     .main {
        width : auto;
        margin-left: 10px;
        margin-right: 10px;
@@ -357,11 +343,77 @@ footer p {
    
    p {
        margin: auto;
-       margin-right: 20px;
    }
    img{
        align-content: center;
        width: 100%;
    }
+    /* SEARCH BAR */
+    .form-search{
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+        width:100%;
+    }
+    #form-search input{
+        width: 85%;
+    }
+    .search_button{
+        float: none;
+        width: 7%
+    }
+    /* NAV BAR */
+    ul.menu{
+        float: none;
+        width: 100%;
+    }
+    ul.menu li{
+        float:none;
+        text-align: center;
+        border-bottom:#53b2c3 3px solid;
+    }
+    ul.menu li.current{
+        display: none;
+    }
+    ul.menu li a{
+        padding: 15px;
+        font-size: 18px;
+    }
+    .social-icons span
+    {
+        display: none;
+    }
+    /* PAGER */
+    .slide-shadow{
+        display: none;
+    }
+    /* ARTICLES */ 
+   .articles_with_images{
+       display: block;
+   }
+    article h3{
+        margin-bottom: 15px;
+    }
+    .articles_with_images article {
+       width: 100%;
+        margin-bottom: 25px;
+    }
+    .articles_without_images article{
+        margin-bottom: 25px;
+    }
+   .articles_without_images{
+       display: block;
+   }
+    #main_text{
+        width: auto;
+        display: block;
+    }
+    nav>div{
+        height:auto;
+    }
+    /* BUTTONS */
+    .button_more{
+        width: 100%;
+    }
 
 }
